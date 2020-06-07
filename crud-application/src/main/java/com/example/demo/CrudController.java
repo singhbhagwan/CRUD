@@ -18,6 +18,7 @@ public class CrudController {
 	@PostMapping(value="/register")
 	
 	public ResponseEntity<Object> register(@RequestBody Employee emp){
+		System.out.println("dkgfkdfkj");
 		EmployeeBean bean=employeeService.register(emp);
 		return new ResponseEntity<>(bean,HttpStatus.CREATED);
 	}
