@@ -43,7 +43,6 @@ class CrudApplicationTests {
 
 	@Before
 	public void setUp() {
-		System.out.println("choooooot");
 		MockitoAnnotations.initMocks(this);
 		this.mockMvc = MockMvcBuilders.standaloneSetup(crudController).build();
 		/*
